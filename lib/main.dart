@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'home.dart';
+import 'package:tirtha/pages/chat/saarthi.dart';
+import 'package:tirtha/pages/welcome.dart';
+import 'package:tirtha/pages/chat/saarthi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      home: Saarthi(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
     );
   }
 }
